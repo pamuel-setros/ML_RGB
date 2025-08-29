@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB Pixel Grapher</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <h2>Upload an Image</h2>
+            <input type="file" id="imageInput" accept="image/png, image/jpeg">
+            <div id="imageContainer">
+                <canvas id="imageCanvas"></canvas>
+            </div>
+        </div>
+        <div class="right-panel">
+            <h2>RGB 3D Graph</h2>
+            <div id="rgbGraph"></div>
+            <div id="rgbValues"></div>
+            <h2>All Pixels RGB Graph</h2>
+            <div id="allRgbGraph"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
